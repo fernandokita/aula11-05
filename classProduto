@@ -1,0 +1,16 @@
+package Package02;
+
+public class Produto {
+
+	private String nomeProduto;
+	
+	public Produto(String nomeProduto) {
+		
+		this.nomeProduto = nomeProduto;
+	}
+	
+	public String getNomeProduto() {
+		
+		return this.nomeProduto;
+	}
+}
