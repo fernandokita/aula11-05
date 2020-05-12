@@ -1,0 +1,26 @@
+package Package02;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Pedido pedido1 = new Pedido(1);  // Pedido numero 1
+		
+		// Produtos..
+		Produto produto1 = new Produto("Camisa");  
+		Produto produto2 = new Produto("Meia");
+		Produto produto3 = new Produto("Cueca");
+		
+		ItemPedido itemCamisa = new ItemPedido(19.90 , 1, produto1);
+		ItemPedido itemMeia = new ItemPedido(8.90 , 1, produto2);
+		ItemPedido itemCueca = new ItemPedido(12.90 , 1, produto3);
+		
+		for(int i=0; i < pedido1.getArrayItemPedido().size(); i++) {
+			
+			//System.out.println("Pedido :" + pedido1 + "Produto");
+			System.out.println("Produto: "+pedido1.getArrayItemPedido().get(i).getProduto()+
+			           "\nQuantidade: " +pedido1.getArrayItemPedido().get(i).getQuantidade()+
+			           "\nPreço: "+pedido1.getArrayItemPedido().get(i).getPreco());
+		}
+	}
+}
